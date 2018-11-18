@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('add','MovieController@create');
-Route::post('add','MovieController@store');
-Route::get('movies','MovieController@index');
-Route::get('edit/{id}','MovieController@edit');
-Route::post('edit/{id}','MovieController@update');
-Route::delete('{id}','MovieController@destroy');
+Route::get('add','WineController@create');
+Route::post('add','WineController@store');
+Route::get('wines','WineController@index');
+Route::get('edit/{id}','WineController@edit');
+Route::post('edit/{id}','WineController@update');
+Route::delete('{id}','WineController@destroy');
